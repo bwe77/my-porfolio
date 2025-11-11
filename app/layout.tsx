@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+// TypeScript may complain about side-effect CSS imports when no declaration exists.
+// Suppress the type-check error for this known global CSS import; alternatively add a global declaration file like `global.d.ts` with: declare module '*.css';
+// @ts-ignore
 import "./globals.css";
 
 const geistSans = Geist({
