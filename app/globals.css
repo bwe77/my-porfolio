@@ -121,7 +121,35 @@ body {
 }
 
 .section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.section-subtitle1 {
   font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.section-subtitle2 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.section-subtitle3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.section-subtitle4 {
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: var(--foreground);
@@ -148,6 +176,8 @@ body {
 .code-text {
   color: var(--secondary);
   font-size: 0.9rem;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -223,10 +253,23 @@ body {
 }
 
 .project-title {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin: 0;
   color: var(--foreground);
+}
+
+.project-subtitle {
+  font-size: 0.9rem;
+  font-weight: bolder;
+  margin: 0.5rem 0;
+  color: var(--secondary);
+}
+
+.project-description {
+  font-size: 1.1rem;
+  color: var(--secondary);
+  margin: 0.5rem 0 0 0;
 }
 
 /* Contact Section */
@@ -278,4 +321,31 @@ body {
   .project-image {
     width: 100%;
   }
+
+  .contact-link {
+    max-width: 100%;
+  }
+
+  .contribution-item {
+    flex-direction: column;
+  }
+
+  .contribution-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.contribution-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.contribution-item:hover {
+  border-color: var(--foreground);
 }

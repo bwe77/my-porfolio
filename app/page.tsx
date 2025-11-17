@@ -56,13 +56,13 @@ export default function Home() {
       <main className="main-content">
         {/* Hero Section */}
         <section className="hero-section">
-          <h2 className="section-title">// Brian Wisely</h2>
+          <h1 className="section-title">// Brian Wisely</h1>
           <p className="hero-subtitle"><b>3rd Year University Student | Cybersecurity | Software Development</b></p>
         </section>
 
         {/* About Section */}
         <section id="about" className="section">
-          <h2 className="section-title">// A little bit about me...</h2>
+          <h1 className="section-title">// A little bit about me...</h1>
           <div className="about-content">
             <p className="code-text">&lt;p&gt;I’m a third-year student at the University of Technology Sydney (UTS), completing a double major in Cybersecurity and Software Development. I’m passionate about building secure, efficient, and innovative systems, combining my technical programming skills with a deep understanding of cybersecurity principles. My goal is to pursue a career that bridges both fields — developing robust software solutions while ensuring the highest standards of security and reliability.&lt;/p&gt;</p>
             <div className="placeholder-box"><img src="/profile.jpeg" alt="Profile photo" /></div>
@@ -97,58 +97,81 @@ export default function Home() {
               <span className="skill-tag"><b>Nmap</b></span>
               <span className="skill-tag"><b>React</b></span>
               <span className="skill-tag"><b>AzureDevOps</b></span>
+              <span className="skill-tag"><b>Flask</b></span>
+              <span className="skill-tag"><b>Figma</b></span>
             </div>
           </div>
         </section>
 
         {/* Education Section */}
         <section id="education" className="section">
-          <h2 className="section-title">// My Education</h2>
-          <p className="code-text">&lt;p&gt;about me&lt;/p&gt;</p>
+          <h1 className="section-title">// My Education</h1>
+          <h2 className="section-subtitle1">Bachelor of Information Technology (2023 - 2026)</h2>
+          <p className="section-subtitle2">University of Technology</p>
+          <p className="section-subtitle3">Major: Cybersecurity and Software Development</p>
+          <div>
+            <span className="section-subtitle4"> WAM: 83.75</span> 
+            <span className="section-subtitle4"> GPA: 6.38</span>
+          </div>
+          
         </section>
 
         {/* Projects Section */}
         <section id="projects" className="section">
-          <h2 className="section-title">// My Projects</h2>
-          
-          <div className="project-card">
-            <div className="project-image"></div>
-            <div className="project-info">
-              <h3 className="project-title">Online Booking System</h3>
-            </div>
-          </div>
+          <h1 className="section-title">// My Projects</h1>
 
-          <div className="project-card">
-            <div className="project-image"></div>
-            <div className="project-info">
-              <h3 className="project-title">Real Time Network Traffic Analyser</h3>
+          <a href="/projects/booking-system" className="nav-link"><b>Online Booking System</b>
+            <div className="project-card">
+              
+              <div className="project-info">
+                <h3 className="project-title">Online Booking System</h3>
+                <h4 className="project-subtitle">Technologies: <span className="project-tech">Java | Spring Boot | HTML | CSS | JavaScript | SQL Server | AzureDevOps | Maven </span></h4>
+                <p className="project-description">A full-stack web-based application that allows users to book badminton courts.</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="project-card">
-            <div className="project-image"></div>
-            <div className="project-info">
-              <h3 className="project-title">Network Design and Simulation Case Study</h3>
+          <a href="/projects/real-time-network-traffic-analyser" className="nav-link"><b>Real Time Network Traffic Analyser</b>
+            <div className="project-card">
+              <div className="project-info">
+                <h3 className="project-title">Real Time Network Traffic Analyser</h3>
+                <h4 className="project-subtitle">Technologies: <span className="project-tech">Python | Scapy | React.Js | Flask</span></h4>
+                <p className="project-description">A tool for monitoring and analyzing network traffic in real-time.</p>
+                
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="project-card">
-            <div className="project-image"></div>
-            <div className="project-info">
-              <h3 className="project-title">Macros Tracker Mobile Application</h3>
+          <a href="/projects/cisco" className="nav-link"><b>Network Design and Simulation Case Study</b>
+            <div className="project-card">
+              <div className="project-info">
+                <h3 className="project-title">Network Design and Simulation Case Study</h3>
+                <h4 className="project-subtitle">Technologies: <span className="project-tech">Cisco Packet Tracer</span></h4>
+                <p className="project-description">A comprehensive network design and simulation project using Cisco Packet Tracer.</p>
+              </div>
             </div>
-          </div>
+          </a>
+
+          <a href="/projects/macros-tracker-mobile-application" className="nav-link"><b>Macros Tracker Mobile Application</b>
+            <div className="project-card">
+              <div className="project-info">
+                <h3 className="project-title">Macros Tracker Mobile Application</h3>
+                <h4 className="project-subtitle">Technologies: <span className="project-tech">Swift | SwiftUI </span></h4>
+                <p className="project-description">An iOS mobile application for tracking macros.</p>
+              </div>
+            </div>
+          </a>
         </section>
 
         {/* Experience Section */}
         <section id="experience" className="section">
-          <h2 className="section-title">// My Experience</h2>
+          <h1 className="section-title">// My Experience</h1>
           <p className="code-text">&lt; My Hyde - Cafe All Rounder&gt;</p>
         </section>
 
         {/* Contact Section */}
         <section id="contact" className="section">
-          <h2 className="section-title">// My Contacts</h2>
+          <h1 className="section-title">// My Contacts</h1>
           <div className="contact-links">
             <a href="#" className="contact-link">Github Link</a>
             <a href="#" className="contact-link">LinkedIn Link</a>
